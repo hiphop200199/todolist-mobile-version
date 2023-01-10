@@ -13,7 +13,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 100vw;
   min-height: 100vh;
   position: relative;
   overflow: hidden;
@@ -31,17 +31,10 @@ body::after {
 body .container {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   width: 80%;
   height: 75vh;
-}
-body .container .background-music {
-  width: 4.5vmax;
-  height: 4.5vmax;
-  font-size: 4vmax;
-  font-weight: 600;
-  color: rgb(39, 17, 0);
 }
 body .container .paper {
   background-image: url(./PaperFolded.webp);
@@ -60,7 +53,7 @@ body .container .paper label {
   font-weight: 600;
   color: rgb(39, 17, 0);
   position: absolute;
-  left: 8%;
+  left: 10%;
   top: 5%;
 }
 body .container .paper #content {
@@ -70,7 +63,7 @@ body .container .paper #content {
   border: none;
   color: rgb(39, 17, 0);
   position: absolute;
-  left: 7%;
+  left: 9%;
   top: 20%;
   font-family: "Caveat", "細明體";
   pointer-events: auto;
@@ -107,7 +100,7 @@ body .container .paper .btn {
 body .container #todo-list {
   position: absolute;
   top: 30%;
-  left: 15%;
+  left: 10%;
   list-style-type: upper-roman;
 }
 body .container #todo-list div.todo-item {
@@ -153,50 +146,4 @@ body .container #todo-list div.todo-item .deleteFile {
   pointer-events: auto;
   border: none;
   text-decoration: underline;
-}
-body .message {
-  background-image: url(./messagePaperPage.webp);
-  -webkit-clip-path: polygon(4% 1%, 1% 10%, 3% 25%, 1% 47%, 3% 60%, 0% 75%, 1% 89%, 9% 98%, 32% 100%, 42% 96%, 54% 100%, 62% 98%, 70% 100%, 82% 97%, 95% 99%, 100% 91%, 100% 72%, 98% 54%, 100% 46%, 100% 28%, 99% 17%, 99% 9%, 99% 1%, 62% 0%, 33% 0%, 20% 1%);
-          clip-path: polygon(4% 1%, 1% 10%, 3% 25%, 1% 47%, 3% 60%, 0% 75%, 1% 89%, 9% 98%, 32% 100%, 42% 96%, 54% 100%, 62% 98%, 70% 100%, 82% 97%, 95% 99%, 100% 91%, 100% 72%, 98% 54%, 100% 46%, 100% 28%, 99% 17%, 99% 9%, 99% 1%, 62% 0%, 33% 0%, 20% 1%);
-  background-color: transparent;
-  background-size: cover;
-  position: absolute;
-  border: none;
-  width: 30%;
-  height: 35vh;
-  left: 35%;
-  top: 32.5vh;
-}
-body .message .modal-message {
-  position: absolute;
-  left: 13%;
-  top: 20%;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  font-size: 3.5vmax;
-  font-weight: 600;
-  color: rgb(39, 17, 0);
-  font-family: "Caveat", "細明體";
-}
-body .message .closebtn {
-  position: absolute;
-  left: 13%;
-  top: 75%;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  border: none;
-  background-color: transparent;
-  font-size: 2.8vmax;
-  font-weight: 600;
-  text-decoration: underline;
-  color: rgb(39, 17, 0);
-  font-family: "Caveat", "細明體";
 }/*# sourceMappingURL=style.css.map */
