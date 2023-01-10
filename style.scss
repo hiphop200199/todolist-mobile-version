@@ -8,23 +8,24 @@
 
 
 body {
-    --bg-image:url(./WoodFine.webp);
-    --bg-opacity:0.85;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100vw;
-    min-height: 100vh;
+    height: 1vh;
     position: relative;
     overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+    animation: up 2s ease-in-out forwards;
     &::after{
         content: "";
         position: absolute;
         z-index: -1;
         inset: 0;
         filter: blur(3px);
-        background-image: var(--bg-image);
-        opacity: var(--bg-opacity);
+        background-image:url(./WoodFine.webp);
+        opacity: 0.85;
         background-size: cover;
     }
     & .container {
@@ -60,7 +61,7 @@ body {
                 border: none;
                 color: rgb(39, 17, 0);
                 position: absolute;
-                left: 9%;
+                left: 11%;
                 top: 20%;
                 font-family: 'Caveat', "細明體";
                 pointer-events: auto;
@@ -98,7 +99,7 @@ body {
         & #todo-list {
             position: absolute;
             top: 30%;
-            left: 10%;
+            left: 12%;
             list-style-type: upper-roman;
 
             & div.todo-item {
@@ -152,3 +153,10 @@ body {
     
     
     }
+    @keyframes up {
+        to {
+          opacity: 1;
+          visibility: visible;
+          height: 100vh;
+        }
+      }
