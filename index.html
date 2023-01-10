@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0,user-scalable=no"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="./image/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <script src="ui.js"></script>
+    <script src="script.js"></script>
+    <title>To do...</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="background-music"></div>
+      <div class="paper">
+        <form id="new-todo-form">
+          <label>Do...</label>
+          <input
+            type="text"
+            id="content"
+            placeholder=" Let`s..."
+            name="content"
+          />
+          <input type="submit" class="btn" value="ok.." />
+        </form>
+
+        <ul id="todo-list"></ul>
+      </div>
+    </div>
+    <form method="dialog">
+      <dialog class="message">
+        <h3 class="modal-message">Write something please.</h3>
+        <button type="submit" class="closebtn">Sure.</button>
+      </dialog>
+    </form>
+  </body>
+</html>
