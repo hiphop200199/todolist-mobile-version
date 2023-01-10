@@ -12,12 +12,11 @@ body {
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height: 1vh;
+    height: 100vh;
     position: relative;
     overflow: hidden;
-    opacity: 0;
-    visibility: hidden;
-    animation: up 2s ease-in-out forwards;
+  
+  
     &::after{
         content: "";
         position: absolute;
@@ -31,18 +30,21 @@ body {
     & .container {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
         width: 80%;
         height: 75vh;
+      
         & .paper {
             background-image: url(./PaperFolded.webp);
             clip-path: polygon(15% 0%, 2% 9%, 3% 24%, 0% 39%, 4% 52%, 2% 67%, 5% 75%, 0% 90%, 8% 100%, 20% 96%, 31% 100%, 41% 96%, 45% 100%, 56% 98%, 59% 100%, 70% 96%, 83% 100%, 90% 92%, 100% 83%, 95% 71%, 100% 64%, 98% 48%, 100% 30%, 95% 21%, 99% 12%, 98% 0%, 81% 5%, 76% 0%, 67% 8%, 59% 3%, 51% 9%, 40% 2%, 32% 7%, 24% 2%);
             background-size: cover;
             width: 100%;
-            height: 100%;
+            height: 1%;
+            opacity: 0;
+            visibility: hidden;
             pointer-events: none;
-            animation:none;
+            animation: up 2s ease-in-out forwards;
             position: relative;
             & label {
                 font-size: 5.5vmax;
@@ -130,7 +132,7 @@ body {
                     font-style: italic;
                     color: rgb(39, 17, 0);
                    background-color: transparent;
-                   margin-inline: 0.7vw;
+                   margin-inline: 1vw;
                    pointer-events: auto;
                    border: none;
                    text-decoration: underline;
@@ -142,7 +144,7 @@ body {
                     font-style: italic;
                     color: rgb(39, 17, 0);
                    background-color: transparent;
-                   margin-inline:1.5vw;
+                   margin-inline:1.8vw;
                    pointer-events: auto;
                    border: none;
                    text-decoration: underline;
@@ -157,6 +159,6 @@ body {
         to {
           opacity: 1;
           visibility: visible;
-          height: 100vh;
+          height: 100%;
         }
       }
