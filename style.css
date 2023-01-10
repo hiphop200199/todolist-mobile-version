@@ -130,7 +130,7 @@ body .container #todo-list div.todo-item .editFile {
   font-style: italic;
   color: rgb(39, 17, 0);
   background-color: transparent;
-  margin-inline: 1vw;
+  margin-inline: 0.7vw;
   pointer-events: auto;
   border: none;
   text-decoration: underline;
@@ -142,7 +142,7 @@ body .container #todo-list div.todo-item .deleteFile {
   font-style: italic;
   color: rgb(39, 17, 0);
   background-color: transparent;
-  margin-inline: 2.5vw;
+  margin-inline: 2.8vw;
   pointer-events: auto;
   border: none;
   text-decoration: underline;
