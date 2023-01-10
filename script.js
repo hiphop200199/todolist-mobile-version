@@ -1,6 +1,6 @@
 window.addEventListener('load', () => {
 	todos = JSON.parse(localStorage.getItem('todos')) || [];
-	//todos在這邊是全域變數
+	//todos在這邊是全域變數，每次load完都會從localstorage讀取資料
 	const newTodoForm = document.querySelector('#new-todo-form');
 
 	newTodoForm.addEventListener('submit', e => {
