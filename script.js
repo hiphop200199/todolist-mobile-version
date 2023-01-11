@@ -42,7 +42,7 @@ function DisplayTodos () {
 		todoItem.appendChild(deleteButton);
 		todoList.appendChild(todoItem);
 
-		editButton.addEventListener('touchend', (e) => {
+		editButton.addEventListener('click', (e) => {
 			const input = content.querySelector('input');
 			input.removeAttribute('readonly');
 			input.focus();
